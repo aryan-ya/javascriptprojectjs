@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-color: rgb(105, 28, 28);
+            padding: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6rem;
+        }.accordian{
+            background-color: white;
+            padding: 4px 16px;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            box-shadow: 1px 1px 5px rgb(255, 205, 255);
+            cursor: pointer;
+        }.question{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          
+        }.icons{
+           transition: transform 0.2s;
+        }.answer{
+            color: #666;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s;
+        }.answer.active{
+            max-height: 200px;
+
+        }.icons.active{
+           transform: rotate(-180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Faqs</h2>
+    <div class="accordian">
+     <div class="question">
+        <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+        <i class=" icons  fa-sharp fa-solid fa-caret-down"></i>
+     </div>
+     <div class="answer">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sed eius neque officiis tempora quos consequatur eaque quo a non culpa, veritatis magni earum, fuga nemo incidunt corporis libero repellat.
+     </div>
+    </div>
+
+    <div class="accordian">
+        <div class="question">
+           <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+           <i class=" icons fa-sharp fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sed eius neque officiis tempora quos consequatur eaque quo a non culpa, veritatis magni earum, fuga nemo incidunt corporis libero repellat.
+        </div>
+       </div>
+
+
+       <div class="accordian">
+        <div class="question">
+           <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+           <i class="icons    fa-sharp fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sed eius neque officiis tempora quos consequatur eaque quo a non culpa, veritatis magni earum, fuga nemo incidunt corporis libero repellat.
+        </div>
+       </div>
+
+
+       <div class="accordian">
+        <div class="question">
+           <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+           <i class="icons   fa-sharp fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sed eius neque officiis tempora quos consequatur eaque quo a non culpa, veritatis magni earum, fuga nemo incidunt corporis libero repellat.
+        </div>
+       </div>
+
+
+       <div class="accordian">
+        <div class="question">
+           <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+           <i class="icons  fa-sharp fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sed eius neque officiis tempora quos consequatur eaque quo a non culpa, veritatis magni earum, fuga nemo incidunt corporis libero repellat.
+        </div>
+       </div>
+
+
+       <div class="accordian">
+        <div class="question">
+           <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+           <i class="icons  fa-sharp fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sed eius neque officiis tempora quos consequatur eaque quo a non culpa, veritatis magni earum, fuga nemo incidunt corporis libero repellat.
+        </div>
+       </div>
+
+
+       <div class="accordian">
+        <div class="question">
+           <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+           <i class="icons  fa-sharp fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sed eius neque officiis tempora quos consequatur eaque quo a non culpa, veritatis magni earum, fuga nemo incidunt corporis libero repellat.
+        </div>
+       </div>
+
+       <div class="accordian">
+        <div class="question">
+           <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+           <i class="icons  fa-sharp fa-solid fa-caret-down"></i>
+        </div>
+        <div class="answer">
+           Lorem ips.m, dolor sit amet consectetur adipisicing elit. Qui sed eius neque officiis tempora quos consequatur eaque quo a non culpa, veritatis magni earum, fuga nemo incidunt corporis libero repellat.
+        </div>
+       
+       </div>
+
+       <script>
+        const accordian= document.querySelectorAll('.accordian');
+       
+        accordian.forEach(accordia => {
+            const icons = accordia.querySelector('.icons');
+            const answer = accordia.querySelector('.answer');
+
+
+            accordia.addEventListener('click',()=>{
+                icons.classList.toggle('active');
+                answer.classList.toggle('active');
+            })
+        });
+
+        
+       </script>
+</body>
+
+
+</html>
